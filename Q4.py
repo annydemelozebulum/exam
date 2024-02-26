@@ -1,0 +1,26 @@
+
+
+def palindrome(word):
+    if word == word[::-1]:
+        return True
+    else:
+        return False
+
+strings = [
+    "5485839837501070045005400701057389385845",
+    "8025833559061079503003059701609553385208",
+    "6593036601359343374664733439531066303956",
+    "7489617719749244646336564429479177169847"
+]
+
+for string in strings:
+    if palindrome(string):
+        print(f"{string} is a palindrome.")
+    else:
+        print(f"{string} is not a palindrome.")
+
+#Results
+#5485839837501070045005400701057389385845 is a palindrome.
+#8025833559061079503003059701609553385208 is a palindrome.
+#6593036601359343374664733439531066303956 is a palindrome.
+#7489617719749244646336564429479177169847 is not a palindrome.
